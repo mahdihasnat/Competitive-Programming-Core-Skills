@@ -2,11 +2,12 @@
 
 import sys
 
+
 def main():
     r, c = map(int, input().split())
     result = 0
 
-    # your code
+    result += r * c - ( (r+2)//3 )*( (c+2)//3 )
 
     print(result)
 
