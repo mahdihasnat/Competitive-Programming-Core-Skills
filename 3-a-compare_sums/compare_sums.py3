@@ -10,7 +10,12 @@ def main():
     equal_sum = False
     sum_a_larger = False
 
-    # your code
+    #print(sum(a))
+    #print(sum(b))
+    eps = 1e-9
+
+    equal_sum =abs( sum( a )  - sum( b ) ) < eps 
+    sum_a_larger = sum( a ) - eps > sum( b )
 
     if equal_sum:
         print('SUM(A)=SUM(B)')
